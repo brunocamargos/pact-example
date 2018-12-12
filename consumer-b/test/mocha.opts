@@ -1,0 +1,4 @@
+--require esm
+--reporter spec
+--recursive
+--timeout 10000
