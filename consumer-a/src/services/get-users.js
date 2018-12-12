@@ -1,6 +1,6 @@
-import request from 'axios';
+import axios from 'axios';
 
-const getUsers = async (data) => {
+const getUsers = async (request = axios) => {
   const GET_USERS_ENDPOINT = 'http://localhost:3000/users'
 
   const serviceResponse = await request.get(GET_USERS_ENDPOINT);

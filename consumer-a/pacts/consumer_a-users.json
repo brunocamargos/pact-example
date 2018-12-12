@@ -1,0 +1,34 @@
+{
+  "consumer": {
+    "name": "Consumer A"
+  },
+  "provider": {
+    "name": "Users"
+  },
+  "interactions": [
+    {
+      "description": "a request for users",
+      "providerState": "it has one user",
+      "request": {
+        "method": "GET",
+        "path": "/users"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": [
+          {
+            "name": "João",
+            "email": "joao@gmail.com"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
