@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node -r esm index.js",
+    "publish-pacts": ".bin/publish-pacts.sh",
     "test": "mocha 'src/**/*-spec.js'"
   },
   "author": "",
@@ -17,7 +18,6 @@
   "devDependencies": {
     "@pact-foundation/pact": "^7.2.0",
     "chai": "^4.2.0",
-    "mocha": "^5.2.0",
-    "sinon": "^7.2.0"
+    "mocha": "^5.2.0"
   }
 }

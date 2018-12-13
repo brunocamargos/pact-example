@@ -2,7 +2,7 @@ import path from 'path';
 import { Pact } from '@pact-foundation/pact';
 
 const usersProviderMock = new Pact({
-  consumer: "Consumer A",
+  consumer: "ConsumerA",
   provider: "Users",
   port: 3000,
   log: path.resolve(process.cwd(), "logs", "pact.log"),
