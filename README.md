@@ -43,7 +43,7 @@ npm run publish-pacts
 
 ## Provider Side
 ```
-cd consumer-a
+cd provider
 npm test-provider
 ```
 

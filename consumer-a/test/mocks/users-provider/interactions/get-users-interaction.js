@@ -1,8 +1,8 @@
 const ONE_USER_BODY = [{ name: 'João', email: 'joao@gmail.com' }];
 
 const getUsersInteraction = {
-  state: 'it has one user with name and email',
-  uponReceiving: 'a request for users',
+  state: 'it has one user',
+  uponReceiving: 'a request to retrieve a list of users',
   withRequest: {
     method: 'GET',
     path: '/users'
