@@ -15,7 +15,7 @@ describe('GetUsers', () => {
     const expected = getUsersInteraction.willRespondWith.body;
     const user = await getUsers();
     expect(user).to.deep.equal(expected);
-    const t = await usersProviderMock.verify();
+    await usersProviderMock.verify();
   });
 
   it('should get an empty list of user from service', async () => {
@@ -23,6 +23,6 @@ describe('GetUsers', () => {
     const expected = getEmptyUsersInteraction.willRespondWith.body;
     const user = await getUsers();
     expect(user).to.deep.equal(expected);
-    const t = await usersProviderMock.verify();
+    await usersProviderMock.verify();
   });
 });
